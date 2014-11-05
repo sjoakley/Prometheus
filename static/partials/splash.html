@@ -1,0 +1,27 @@
+<div class="hero-unit">
+  <h2>Welcome to <a href="https://en.wikipedia.org/wiki/Malebolge">Malebolge</a>.</h2>
+  <p>
+    Malebolge is the load test harness for simulating syncing and generic traffic for GorillaBoy.
+  </p>
+  <p>
+    I am your host Malacoda. It will be my pleasure to assist you in unleashing the
+    <a href="https://en.wikipedia.org/wiki/Malebranche_(Divine_Comedy)">Malebranche</a> against your GorillaBoy.
+  </p>
+</div>
+
+<div class="text-center">
+  <form class="form-inline" ng-submit="launchTest()">
+    <h2>Start a Load Test</h2>
+    <input type="text" placeholder="Administrative Access Token" id="adminAccessToken" ng-model="adminAccessToken" required/>
+    <input type="text" placeholder="instance1, instance2" id="instances" ng-model="instances" />
+    <input type="text" placeholder="https://s3.amazonaws.com/data.tar.gz" id="data" ng-model="data" />
+    <button type="submit" class="btn btn-primary">Start Test</button>
+  </form>
+</div>
+
+<accordion close-others="false">
+  <accordion-group heading="{{result.instance.PublicDns}}" ng-repeat="result in results">
+    <!--<code class="prettyprint">{{prettyJSON(result)}}</code>-->
+    <pre>{{prettyJSON(result)}}</pre>
+  </accordion-group>
+</accordion>

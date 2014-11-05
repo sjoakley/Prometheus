@@ -1,0 +1,5 @@
+Database:
+  name: bc_dev
+  username: bcuser
+  password: siegeCastle
+  endpoint: "bc-dev.cbnwfc18b5cj.us-east-1.rds.amazonaws.com:3306"

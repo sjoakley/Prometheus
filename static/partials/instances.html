@@ -1,0 +1,15 @@
+<h3>Malebranche</h3>
+<table class="table">
+  <thead>
+    <th>Hostname</th>
+    <th>Public DNS</th>
+    <th>Status</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="instance in instances">
+      <td>{{instance.Hostname}}</td>
+      <td><a href="http://{{instance.PublicDns}}">{{instance.PublicDns}}</a></td>
+      <td>{{instance.Status}}</td>
+    </tr>
+  </tbody>
+</table>

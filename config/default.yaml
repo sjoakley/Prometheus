@@ -1,0 +1,4 @@
+Server:
+  port: 8080
+  region: us-east-1
+  processes: 1
